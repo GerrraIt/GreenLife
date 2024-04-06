@@ -1,0 +1,187 @@
+﻿<Window x:Class="GreenLife.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GreenLife"
+        mc:Ignorable="d"
+        xmlns:gmaps="clr-namespace:GMap.NET.WindowsPresentation;assembly=GMap.NET.WindowsPresentation"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="GreenLife" Height="900" Width="1300">
+    <Grid Background="Azure">
+        <gmaps:GMapControl x:Name="gmap" Loaded="map_load"/>
+        <Border Background="#B28ADF" Margin="10" Padding="10" CornerRadius="25" VerticalAlignment="Top" HorizontalAlignment="Left" Height="600" Width="520">
+
+                <Border.Effect>
+                    <DropShadowEffect Direction="300" Opacity="0.75" BlurRadius="25"/>
+                </Border.Effect>
+
+                <Grid Background="Transparent">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="9*"/>
+                        <RowDefinition Height="281*"/>
+                    </Grid.RowDefinitions>
+
+                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.RowSpan="2">
+
+                        <StackPanel>
+                            <Button x:Name="batareykiBTN" Click="batareykiBTN_Click" Opacity="0.5" Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\batareyka.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Батарейки" Margin="5,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="bumagaBTN" Click="bumagaBTN_Click" Opacity="0.5" Margin="10 , 0, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5, 5, 5, 5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\bumaga.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Бумага" Margin="25,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="tehnikaBTN" Click="tehnikaBTN_Click" Opacity="0.5" Margin="10 , 0, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\tehnika.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Техника" Margin="20,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="krizhkiBTN" Click="krizhkiBTN_Click" Opacity="0.5" Margin="10 , 0, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\krizhki.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Крышки" Margin="20,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="lampochkiBTN" Click="lampochkiBTN_Click" Opacity="0.5" Margin="10 , 0, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\lampochki.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Лампочки" Margin="15,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="metallBTN" Click="metallBTN_Click" Opacity="0.5" Margin="10 , 0, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\metall.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Металл" Margin="22,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="odezhdaBTN" Click="odezhdaBTN_Click" Opacity="0.5" Margin="0, 30, 10, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\odezhda.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Одежда" Margin="10,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="opasnoeBTN" Click="opasnoeBTN_Click" Opacity="0.5" Margin="0, 30, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\opasnoe.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Опасное" Margin="10,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="plastikBTN" Click="plastikBTN_Click" Opacity="0.5" Margin="10, 30, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\plastik.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Пластик" Margin="20,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="shiniBTN" Click="shiniBTN_Click" Opacity="0.5" Margin="10, 30, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\shini.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Шины" Margin="25,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="stekloBTN" Click="stekloBTN_Click" Opacity="0.5" Margin="10, 30, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\steklo.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Стекло" Margin="24,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                        <StackPanel>
+                            <Button x:Name="drygoeBTN" Click="drygoeBTN_Click" Opacity="0.5" Margin="10, 30, 0, 0"  Width="70" Height="70" Background="Transparent" BorderThickness="0">
+                                <Button.Template>
+                                    <ControlTemplate TargetType="Button">
+                                        <Border Background="#8B5EBE" CornerRadius="20">
+                                        <Image Margin="5" Source="C:\Users\rpozc\source\repos\GreenLife\Resources\drygoe.png" Stretch="UniformToFill" Opacity="1"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Button.Template>
+                            </Button>
+                            <TextBlock Text="Другое" Margin="24,5,0,0" Foreground="White" FontWeight="Medium"/>
+                        </StackPanel>
+
+                    </WrapPanel>
+                </Grid>
+            </Border>
+    </Grid>
+</Window>

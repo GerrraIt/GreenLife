@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.33214.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreenLife", "GreenLife.csproj", "{DB978B8A-C695-484F-8B00-72D534FDF61A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DB978B8A-C695-484F-8B00-72D534FDF61A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB978B8A-C695-484F-8B00-72D534FDF61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB978B8A-C695-484F-8B00-72D534FDF61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB978B8A-C695-484F-8B00-72D534FDF61A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {927EE0F7-8FDF-4AD4-BA22-C2D0200C82A0}
+	EndGlobalSection
+EndGlobal
